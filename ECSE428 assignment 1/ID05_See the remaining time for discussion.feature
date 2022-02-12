@@ -12,7 +12,7 @@ So that I can prepare my speech
       And it has been less than 3 minutes
      Then the countdown should successfully be shown on my screen
   
-  Scenario: (Error Flow) Time out for discussion, no countdown showing
+  Scenario: (Error Flow) Time out for discussion, no countdown showing on my page
      When all players have finished their turn
       And it has been over 3 minutes
      Then the countdown should not be shown on my screen
