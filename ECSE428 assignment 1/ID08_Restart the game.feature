@@ -20,9 +20,7 @@ So that we can play again
      Then the webpage should not be successfully redirect to restart the game
   
   Scenario: (Alternate Flow) I successfully restart the game
-       As a Host
      When I closed the webpage 
       And I restarted the webpage
      Then the webpage should be successfully redirect to restart the game
     
-  

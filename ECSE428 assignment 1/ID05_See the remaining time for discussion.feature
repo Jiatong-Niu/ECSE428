@@ -15,6 +15,7 @@ So that I can prepare my speech
   Scenario: (Error Flow) I can not see the countdown due to internet connection problem
      When all players have finished their turn
       And it has been less than 3 minutes
+      And I have internet connection problem
      Then the countdown should not be shown on my screen
       And the system will inform reconnecting on my screen
   

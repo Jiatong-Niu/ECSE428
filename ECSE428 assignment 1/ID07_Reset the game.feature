@@ -20,7 +20,6 @@ So that I can change the cards included in the game
      Then I will not be able to reset the game unless I restart the session
   
   Scenario: (Alternate Flow) I successfully reset the game
-       As a Host
      When I refresh the browser to start a new session
      Then the webpage should be successfully redirect to reset the game
   
