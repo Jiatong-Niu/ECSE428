@@ -8,7 +8,7 @@ So that I know the game is in action
     Given that a game session is in progress
       And that all the players know their identity
   
-  Scenario Outline: (Normal Flow) I successfully see the page
+  Scenario: (Normal Flow) I successfully see the page
      When it is not my turn
      Then the night has fallen page should successfully shown on the screen
   
