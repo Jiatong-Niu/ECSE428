@@ -19,7 +19,7 @@ So that I can change the cards included in the game
       And I can not clicked the reset button
      Then I will not be able to reset the game unless I restart the session
   
-  Scenario: (Alternate Flow) I successfully reset the game
+  Scenario: (Alternate Flow) I successfully reset the game though refreshing browser
      When I refresh the browser to start a new session
      Then the webpage should be successfully redirect to reset the game
   
