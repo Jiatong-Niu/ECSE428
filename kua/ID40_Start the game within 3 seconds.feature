@@ -22,4 +22,5 @@ So that we will not be waiting too long
   Scenario: (Error Flow) Timeouts are logged when starting the game and no idea about the state of the game
      Given I start the game
      When the loading time takes more than the max acceptable wait time 3 seconds
-     Then the problem is logged
+     And game is not responding
+     Then the problem is logged with "Unkonwn error" and player shall restart the game

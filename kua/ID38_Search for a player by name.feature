@@ -15,7 +15,7 @@ So I can view his/her profile or add him/her to my friend list
   Scenario: (Alternate Flow) Search for a player with the substring of the name
      When I search for a player with the substring of his/her name
      Then a list of players should be displayed
-      And I want find the player I want 
+      And I can find the player I want 
       And I can see his/her profile
   
   Scenario: (Error Flow) Search for a player but the name includes illegal characters

@@ -11,7 +11,7 @@ So that I can invite my frineds to the room and we can have a game together
      When I create a game room with a unique room name
      Then a game room is created with the name
   
-  Scenario: (Alternative Flow) Create a game room with auto-generated name
+  Scenario: (Alternate Flow) Create a game room with auto-generated name
      When I create a game room
       And I set the room name to be auto-generated name 
      Then a game room is created with the name
