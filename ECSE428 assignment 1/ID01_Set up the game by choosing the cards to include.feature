@@ -7,6 +7,7 @@ So that I can start the game
   Background: 
     Given that a game session is created
       And there are at least three players in the game session
+      And I am a Host
   
   Scenario: (Normal Flow) I successfully set up the game
      When I select cards that include two teams
