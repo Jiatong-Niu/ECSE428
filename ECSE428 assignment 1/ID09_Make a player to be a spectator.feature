@@ -23,8 +23,8 @@ So that the player can view the game without taking part in the game
       And the player is already a spectator
      Then the selected player will be kicked out of the game
   
-  Scenario: (Alternate Flow) I make a player spectator after he/she join the game
-     When a spectator join in the game
+  Scenario: (Alternate Flow) I make a player spectator after he/she rejoin the game
+     When a spectator rejoin in the game
       And I clicked menu
       And the boot players button is shown
       And I can click the boot player button
