@@ -18,7 +18,7 @@ So that I can plan for the game
      Then the selection should not shown on my screen
       And the system will inform reconnecting message on my screen
   
-  Scenario Outline: (Alternate Flow) I successfully see the information after reload
+  Scenario: (Alternate Flow) I successfully see the information after reload
      When the host selects the card
       And I reload my webpage
      Then the selection should successfully shown on my screen
