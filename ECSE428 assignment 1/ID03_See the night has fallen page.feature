@@ -17,7 +17,7 @@ So that I know the game is in action
       And the host reset the game
      Then the night has fallen page should not successfully shown on the screen
   
-  Scenario Outline: (Alternate Flow) I successfully see the page
+  Scenario: (Alternate Flow) I successfully see the page
      When I have finished my action
       And there are other players waiting for their turn
      Then the night has fallen page should successfully shown on the screen
