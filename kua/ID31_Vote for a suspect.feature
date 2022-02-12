@@ -1,6 +1,5 @@
 Feature: ID31_Vote for a suspect
 
-    User Stories:
     As a player
     I want to be able to vote for a suspect
     So that I can win the game if one wolf gets the majority vote

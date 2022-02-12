@@ -1,6 +1,5 @@
 Feature: ID01_Set up the game by choosing the card
 
-    User Stories:
     As a Host
     I want to choose the identification cards
     So that I can start the game
@@ -20,13 +19,13 @@ Feature: ID01_Set up the game by choosing the card
                Then the selection should not be successfully stored in the system
                And the system warns me that I need to select at least one card on the other team
     
-    Scenario: (Alter Flow) I do not successfully set up the game because I select not enough number of cards
+    Scenario: (Alternate Flow) I do not successfully set up the game because I select not enough number of cards
                When I select cards that include two teams
                And the number of cards is not twice the number of current players
                Then the selection should not be successfully stored in the system
                And the system warns me that I need to select more cards to star the game
 
-    Scenario: (Alter Flow) I do not successfully set up the game because I select too many cards
+    Scenario: (Alternate Flow) I do not successfully set up the game because I select too many cards
                When I select cards that include two teams
                And the number of cards is not twice the number of current players
                Then the selection should not be successfully stored in the system
