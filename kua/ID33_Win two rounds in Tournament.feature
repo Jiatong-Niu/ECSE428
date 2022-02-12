@@ -1,6 +1,6 @@
 Feature: Win two rounds to win the game 
 
-As a user
+As a player
 I want to be able to win two rounds during the Tournament mode
 So that I can win the game
 
@@ -14,7 +14,7 @@ So that I can win the game
   
   Scenario: (Alternate flow) The other players win two rounds 
      When I do not win 2 rounds
-      And some users have won 2 rounds
+      And some players have won 2 rounds
      Then the game ends 
       And I am not the winner
   

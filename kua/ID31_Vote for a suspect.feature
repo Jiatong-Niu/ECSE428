@@ -8,7 +8,7 @@ So that I can win the game if one wolf gets the majority vote
     Given that discurssion period is end 
     And it is time to vote
   
-  Scenario Outline: (Normal Flow) Vote for a player to kill him/her
+  Scenario: (Normal Flow) Vote for a player to kill him/her
      When it is the voting time
       And I vote a player as the wolf
      Then this player's vote count increments by 1
