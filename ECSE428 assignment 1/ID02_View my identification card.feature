@@ -8,7 +8,7 @@ So that I can play the game
     Given that a game session is in progress
       And that all the players were assigned to an identification card
   
-  Scenario Outline: (Normal Flow) I successfully saw my identification card
+  Scenario: (Normal Flow) I successfully saw my identification card
      When I scroll the webpage
      Then my identification card should be successfully shown on the screen
   
