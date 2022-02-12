@@ -7,7 +7,7 @@ So that the player will be forced to leave the game
   Background: 
     Given that a game session is in progress
   
-  Scenario Outline: (Normal Flow) I successfully boot a spectator
+  Scenario: (Normal Flow) I successfully boot a spectator
      When I clicked menu
       And I clicked the boot player button
       And I selected the player
@@ -21,7 +21,7 @@ So that the player will be forced to leave the game
       And I can not select any player
      Then I can not kick the player out of the game
   
-  Scenario Outline: (Alternate Flow) I successfully boot a spectator
+  Scenario: (Alternate Flow) I successfully boot a spectator
      When I clicked menu
       And I clicked the boot player button
       And I selected the name
