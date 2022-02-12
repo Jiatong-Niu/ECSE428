@@ -6,6 +6,7 @@ So that we can play again
 
   Background: 
     Given that a game session is in progress
+    And I am a Host
   
   Scenario: (Normal Flow) I successfully restart the game through restart button
      When the vote process was finished
