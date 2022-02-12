@@ -6,6 +6,7 @@ So that I can change the cards included in the game
 
   Background: 
     Given that a game session is in progress
+    And I am a Host
   
   Scenario: (Normal Flow) I successfully reset the game
      When I clicked menu
