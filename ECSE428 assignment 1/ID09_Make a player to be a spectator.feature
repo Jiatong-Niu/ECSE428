@@ -6,6 +6,7 @@ So that the player can view the game without taking part in the game
 
   Background: 
     Given that a game session is in progress
+    And I am a Host
   
   Scenario: (Normal Flow) I successfully make a player to be a spectator
      When I clicked menu
