@@ -7,7 +7,7 @@ So that I can know who was on my team
   Background: 
     Given that a game session is in progress
   
-  Scenario Outline: (Normal Flow) I successfully see the roles
+  Scenario: (Normal Flow) I successfully see the roles
      When all players finished voting
      Then the role of each player should be shown on my screen
   
@@ -17,7 +17,7 @@ So that I can know who was on my team
      Then the role of each player should not shown on my screen
       And the system will display reconnecting message on my screen
   
-  Scenario Outline: (Alternate Flow) I can not see the role of each player because the host reset the game
+  Scenario: (Alternate Flow) I can not see the role of each player because the host reset the game
      When all players finished voting
       And the host reset the game
      Then the role of each player should not shown on my screen

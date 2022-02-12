@@ -7,7 +7,7 @@ So that I know how to play the game
   Background: 
     Given that a game session is in progress
   
-  Scenario Outline: (Normal Flow) I successfully see the game playrule
+  Scenario: (Normal Flow) I successfully see the game playrule
      When the Host finished setting up the game
       And the Host clicked ok
      Then the gameplay rule should successfully be shown on my screen
@@ -19,7 +19,7 @@ So that I know how to play the game
      Then the gameplay rule will not shown on my screen
       And the system will inform reconnecting on my screen
   
-  Scenario Outline: (Alternate Flow) I can not see the gameplay because the host reset the game
+  Scenario: (Alternate Flow) I can not see the gameplay because the host reset the game
      When the Host finished setting up the game
       And the Host clicked ok
       And the Host reset the game

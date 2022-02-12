@@ -8,7 +8,7 @@ So that I can plan for the game
     Given that a game session is created
       And there are at least three players in the game session
   
-  Scenario Outline: (Normal Flow) I successfully see the information 
+  Scenario: (Normal Flow) I successfully see the information 
      When the host selects the card
      Then the selection should successfully shown on my screen
   
@@ -18,7 +18,7 @@ So that I can plan for the game
      Then the selection should not shown on my screen
       And the system will inform reconnecting message on my screen
   
-  Scenario Outline: (Alternate Flow) I successfully see the information after reload
+  Scenario: (Alternate Flow) I successfully see the information after reload
      When the host selects the card
       And I reload my webpage
      Then the selection should successfully shown on my screen

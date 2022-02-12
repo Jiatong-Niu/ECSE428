@@ -8,7 +8,7 @@ So that I can start the game
     Given that a game session is created
       And there are at least three players in the game session
   
-  Scenario Outline: (Normal Flow) I successfully set up the game
+  Scenario: (Normal Flow) I successfully set up the game
      When I select cards that include two teams
       And the number of cards is twice the number of current players
      Then the selection should be successfully stored in the system

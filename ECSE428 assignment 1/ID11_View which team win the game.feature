@@ -7,7 +7,7 @@ So that I can know the result
   Background: 
     Given that a game session is in progress
   
-  Scenario Outline: (Normal Flow) I successfully see the game result
+  Scenario: (Normal Flow) I successfully see the game result
      When all players finished voting
      Then the game result should be shown on my screen
   
@@ -17,7 +17,7 @@ So that I can know the result
      Then the game result should not shown on my screen
       And the system will inform reconnecting on my screen
   
-  Scenario Outline: (Alternate Flow) I can not see the game result because the host reset the game
+  Scenario: (Alternate Flow) I can not see the game result because the host reset the game
      When all players finished voting
       And the host reset the game
      Then the game result should not shown on my screen

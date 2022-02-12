@@ -7,7 +7,7 @@ So that I can know what happened during the game
   Background: 
     Given that a game session is in progress
   
-  Scenario Outline: (Normal Flow) I successfully see the card distribution information
+  Scenario: (Normal Flow) I successfully see the card distribution information
      When all players finished voting
      Then the cards that were not distributed in game should be shown on my screen
   
@@ -17,7 +17,7 @@ So that I can know what happened during the game
      Then the cards that were not distributed in game should not shown on my screen
       And the system will inform reconnecting on my screen
   
-  Scenario Outline: (Alternate Flow) I can not see the card distribution information because the host reset the game
+  Scenario: (Alternate Flow) I can not see the card distribution information because the host reset the game
      When all players finished voting
       And the host reset the game
      Then the cards that were not distributed in game should not shown on my screen

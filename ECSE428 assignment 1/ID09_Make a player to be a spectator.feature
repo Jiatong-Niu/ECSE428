@@ -7,7 +7,7 @@ So that the player can view the game without taking part in the game
   Background: 
     Given that a game session is in progress
   
-  Scenario Outline: (Normal Flow) I successfully make a player to be a spectator
+  Scenario: (Normal Flow) I successfully make a player to be a spectator
      When I clicked menu
       And the boot players button is shown
       And I clicked the boot player button
@@ -23,10 +23,11 @@ So that the player can view the game without taking part in the game
       And the player is already a spectator
      Then the selected player will be kicked out of the game
   
-  Scenario Outline: (Alternate Flow) I can not make a player to be a spectator because I am not the Host
-     When I clicked menu
-      And the boot players button is not shown
-      And I can not click the boot player button
-      And I can not select the name
-     Then I can not make a player to be a spectator
+  Scenario: (Alternate Flow) I make a player spectator after he/she rejoin the game
+     When a spectator rejoin in the game
+      And I clicked menu
+      And the boot players button is shown
+      And I can click the boot player button
+      And I can select the name of the player who just joined the game
+     Then I can make this player to be a spectator
   
