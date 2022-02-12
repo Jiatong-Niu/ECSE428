@@ -7,7 +7,7 @@ So that I can know what happened during the game
   Background: 
     Given that a game session is in progress
   
-  Scenario Outline: (Normal Flow) I successfully see the event log
+  Scenario: (Normal Flow) I successfully see the event log
      When all players finished voting
      Then the event log should be shown on my screen
   
@@ -17,7 +17,7 @@ So that I can know what happened during the game
      Then the event log should not shown on my screen
       And the system will inform reconnecting on my screen
   
-  Scenario Outline: (Alternate Flow) I can not see the event log because the host reset the game
+  Scenario: (Alternate Flow) I can not see the event log because the host reset the game
      When all players finished voting
       And the host reset the game
      Then the event log should not shown on my screen
