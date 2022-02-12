@@ -12,10 +12,12 @@ So that I can know which player has not finish checking
       And there are other players who have not finished checking
      Then the waiting information should be shown on my screen
   
-  Scenario: (Error Flow) I do not see the waiting information
+  Scenario: (Error Flow) I do not see the waiting information due to internet connection problem
      When I have finished checking 
-      And there are no other players who have not finished checking
+      And there are other players who have not finished checking
+      And I have internet connection problem
      Then the waiting information should not be shown on my screen
+      And the system will inform reconnecting on my screen
   
   Scenario: (Alternate Flow) I successfully see which player I am waiting
      When I have finished checking 
