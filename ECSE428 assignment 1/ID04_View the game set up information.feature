@@ -8,7 +8,7 @@ So that I can plan for the game
     Given that a game session is created
       And there are at least three players in the game session
   
-  Scenario Outline: (Normal Flow) I successfully see the information 
+  Scenario: (Normal Flow) I successfully see the information 
      When the host selects the card
      Then the selection should successfully shown on my screen
   
